@@ -1,5 +1,6 @@
 package fr.le_campus_numerique.intro_java_spring.dto;
 
+@Deprecated
 public class GameCreationParams {
 
     private String typeOfGame;
