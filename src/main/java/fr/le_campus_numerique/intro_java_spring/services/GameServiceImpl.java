@@ -1,7 +1,7 @@
 package fr.le_campus_numerique.intro_java_spring.services;
 
-import fr.le_campus_numerique.intro_java_spring.dto.GameCreationParams;
 import fr.le_campus_numerique.intro_java_spring.dto.TokenDTO;
+import fr.le_campus_numerique.intro_java_spring.entities.GameCreationParams;
 import fr.le_campus_numerique.intro_java_spring.interfaces.GameCatalog;
 import fr.le_campus_numerique.intro_java_spring.interfaces.GamePlugin;
 import fr.le_campus_numerique.intro_java_spring.interfaces.GameService;
