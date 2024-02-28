@@ -1,20 +1,44 @@
 package fr.le_campus_numerique.intro_java_spring.entities;
 
 import fr.le_campus_numerique.intro_java_spring.dto.UserDTO;
+import jakarta.persistence.*;
 
 import java.sql.Date;
 
+@Entity
+@Table(name = "users")
 public class User {
 
+    @Id
+    @GeneratedValue(strategy = GenerationType.AUTO)
     private int id;
+
+    @Column(name = "first_name", length = 50, nullable = false)
     private String firstName = "";
+
+    @Column(name = "last_name", length = 50, nullable = false)
     private String lastName = "";
+
+    @Column(name = "pseudo", length = 30, nullable = false)
     private String pseudo = "";
+
+    @Column(name = "email", length = 30, nullable = false)
     private String email = "";
+
+    @Column(name = "date_of_birth", nullable = false)
     private Date date_of_birth;
+
+    @Column(name = "avatar", nullable = false)
     private String avatar = "";
+
+    @Column(name = "phone", length = 13, nullable = false)
     private String phone = "";
+
+    @Column(name = "tokens_total", nullable = false)
     private int tokens_total;
+
+    @Column(name = "country_id", nullable = false)
+    @JoinTable(name = "countries")
     private int country_id;
 
     //private final List<String> roles = new ArrayList<>();

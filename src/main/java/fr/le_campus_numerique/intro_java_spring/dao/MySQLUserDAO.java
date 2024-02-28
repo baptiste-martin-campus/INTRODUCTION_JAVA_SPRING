@@ -9,6 +9,7 @@ import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
 
+@Deprecated
 @Component
 public class MySQLUserDAO implements UserDAO {
     private String sql = "";

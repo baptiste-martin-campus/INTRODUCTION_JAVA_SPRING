@@ -4,7 +4,6 @@ import fr.le_campus_numerique.intro_java_spring.dto.UserDTO;
 import fr.le_campus_numerique.intro_java_spring.entities.User;
 import fr.le_campus_numerique.intro_java_spring.interfaces.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
-import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.List;
@@ -13,7 +12,7 @@ import java.util.List;
 public class UserController {
 
     //@Qualifier("simpleUserDAO")
-    @Qualifier("mySQLUserDAO")
+    //@Qualifier("mySQLUserDAO")
     @Autowired
     private UserDAO dao;
 

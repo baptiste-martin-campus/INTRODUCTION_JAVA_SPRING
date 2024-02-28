@@ -1,9 +1,22 @@
 package fr.le_campus_numerique.intro_java_spring.entities;
 
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
+
+@Entity
+@Table(name = "countries")
 public class Country {
+
+    @Id
      private int id;
+
+    @Column(name = "name", length = 50)
      private String name;
-     private int legal_age;
+
+    @Column(name = "legal_age")
+    private int legal_age;
 
 
     public int getId() {
