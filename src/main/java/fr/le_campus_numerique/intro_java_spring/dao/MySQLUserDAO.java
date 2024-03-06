@@ -1,8 +1,8 @@
 package fr.le_campus_numerique.intro_java_spring.dao;
 
+import fr.le_campus_numerique.intro_java_spring.configurations.DbConfig;
 import fr.le_campus_numerique.intro_java_spring.entities.User;
 import fr.le_campus_numerique.intro_java_spring.interfaces.UserDAO;
-import fr.le_campus_numerique.intro_java_spring.services.DbConfig;
 import org.springframework.stereotype.Component;
 
 import java.sql.*;

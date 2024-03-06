@@ -2,10 +2,13 @@ package fr.le_campus_numerique.intro_java_spring.controllers;
 
 import fr.le_campus_numerique.intro_java_spring.dao.UserRepository;
 import fr.le_campus_numerique.intro_java_spring.dto.UserDTO;
+import fr.le_campus_numerique.intro_java_spring.entities.Roles;
 import fr.le_campus_numerique.intro_java_spring.entities.User;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.security.access.annotation.Secured;
+import org.springframework.security.crypto.password.PasswordEncoder;
 import org.springframework.web.bind.annotation.*;
 
 import java.util.ArrayList;
@@ -24,6 +27,10 @@ public class UserController{
 
     private static final Logger LOGGER = LoggerFactory.getLogger(UserController.class);
 
+    @Autowired
+    private PasswordEncoder passwordEncoder;
+
+    @Secured(Roles.ROLE_ADMIN)
     @GetMapping("/users")
     public List<UserDTO> getAllUsers() {
         LOGGER.info("Affichage de tous les users");
@@ -34,23 +41,30 @@ public class UserController{
             return users;
     }
 
-//    @GetMapping("/users")
-//    public List<UserDTO> getAllUsers() {
-//        return dao.getAllUsers().stream()
-//                .map(User::toDto)
-//                .toList();
-//    }
-
-
+    @Secured(Roles.ROLE_USER)
     @GetMapping("/users/{id}")
     public UserDTO getUserById(@PathVariable int id) {
         LOGGER.info("Affichage de l'user " + id);
         return dao.findById(id).get().toDto();
     }
 
+    @GetMapping("/users/name/{name}")
+    public UserDTO getUserByName(@PathVariable String name) {
+        LOGGER.info("Affichage de l'user avec un name" + name);
+        return dao.findByPseudo(name).toDto();
+    }
+
     @PostMapping("/users")
-    public UserDTO addUser(@RequestBody User user) {
+    public UserDTO addUser(@RequestBody User user) throws Exception{
         LOGGER.info("Ajout d'un user");
+        User userAlreadyCreated = dao.findByPseudo(user.getPseudo());
+        if(userAlreadyCreated != null ){
+            LOGGER.error("Erreur : User déjà crée");
+            throw new Exception();
+        }
+        String newPassword = passwordEncoder.encode(user.getPassword());
+        user.setPassword(newPassword);
+        user.setRoles("ROLE_USER");
         return dao.save(user).toDto();
     }
 
@@ -71,6 +85,10 @@ public class UserController{
         ancientUser.setPhone(user.getPhone());
         ancientUser.setTotalTokens(user.getTotalTokens());
         ancientUser.setCountry_id(user.getCountry_id());
+
+        String newPassword = passwordEncoder.encode(user.getPassword());
+        user.setPassword(newPassword);
+        ancientUser.setPassword(passwordEncoder.encode(newPassword));
         return dao.save(ancientUser).toDto();
     }
 

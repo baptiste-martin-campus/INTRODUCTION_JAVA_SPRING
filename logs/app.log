@@ -1,22 +1,64 @@
-2024-02-29 14:35:40,166 Starting IntroJavaSpringApplication using Java 21.0.2 with PID 7204 (C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING\target\classes started by baptiste.martin in C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING)
-2024-02-29 14:35:40,167 Running with Spring Boot v3.2.2, Spring v6.1.3
-2024-02-29 14:35:40,167 The following 1 profile is active: "mysql"
-2024-02-29 14:35:43,846 Started IntroJavaSpringApplication in 4.07 seconds (process running for 4.84)
-2024-02-29 14:35:50,553 Mise à jour de l'user 10
-2024-02-29 14:35:50,638 Erreur : User inconnu avec l'id donné
-2024-02-29 14:37:24,808 Starting IntroJavaSpringApplication using Java 21.0.2 with PID 17788 (C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING\target\classes started by baptiste.martin in C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING)
-2024-02-29 14:37:24,810 Running with Spring Boot v3.2.2, Spring v6.1.3
-2024-02-29 14:37:24,811 The following 1 profile is active: "mysql"
-2024-02-29 14:37:28,215 Started IntroJavaSpringApplication in 3.793 seconds (process running for 4.548)
-2024-02-29 14:37:39,617 Mise à jour de l'user 10
-2024-02-29 14:37:39,686 Erreur : User inconnu avec l'id donné
-2024-02-29 14:40:36,004 Starting IntroJavaSpringApplication using Java 21.0.2 with PID 8252 (C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING\target\classes started by baptiste.martin in C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING)
-2024-02-29 14:40:36,005 Running with Spring Boot v3.2.2, Spring v6.1.3
-2024-02-29 14:40:36,006 The following 1 profile is active: "mysql"
-2024-02-29 14:40:39,465 Started IntroJavaSpringApplication in 3.849 seconds (process running for 4.661)
-2024-02-29 14:41:00,402 Starting IntroJavaSpringApplication using Java 21.0.2 with PID 9420 (C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING\target\classes started by baptiste.martin in C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING)
-2024-02-29 14:41:00,403 Running with Spring Boot v3.2.2, Spring v6.1.3
-2024-02-29 14:41:00,403 The following 1 profile is active: "mysql"
-2024-02-29 14:41:04,102 Started IntroJavaSpringApplication in 4.112 seconds (process running for 4.859)
-2024-02-29 14:41:08,272 Mise à jour de l'user 10
-2024-02-29 14:41:08,338 Erreur : User inconnu avec l'id donné
+2024-03-06 10:49:42,977 Starting IntroJavaSpringApplication using Java 21.0.2 with PID 14404 (C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING\target\classes started by baptiste.martin in C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING)
+2024-03-06 10:49:42,977 Starting IntroJavaSpringApplication using Java 21.0.2 with PID 14404 (C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING\target\classes started by baptiste.martin in C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING)
+2024-03-06 10:49:42,983 Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-03-06 10:49:42,983 Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-03-06 10:49:42,983 The following 1 profile is active: "mysql"
+2024-03-06 10:49:42,983 The following 1 profile is active: "mysql"
+2024-03-06 10:49:47,490 Filter 'jwtTokenAuthenticationFilter' configured for use
+2024-03-06 10:49:47,490 Filter 'jwtTokenAuthenticationFilter' configured for use
+2024-03-06 10:49:48,178 Started IntroJavaSpringApplication in 5.611 seconds (process running for 6.65)
+2024-03-06 10:49:48,178 Started IntroJavaSpringApplication in 5.611 seconds (process running for 6.65)
+2024-03-06 10:49:54,342 TOUT EST BON !
+2024-03-06 10:49:54,342 TOUT EST BON !
+2024-03-06 10:49:54,365 Affichage de tous les users
+2024-03-06 10:49:54,365 Affichage de tous les users
+2024-03-06 10:50:16,588 No Authorization header found
+2024-03-06 10:50:16,588 No Authorization header found
+2024-03-06 10:50:16,641 Tentative de connexion
+2024-03-06 10:50:16,641 Tentative de connexion
+2024-03-06 10:50:16,863 Connexion réussie
+2024-03-06 10:50:16,863 Connexion réussie
+2024-03-06 10:50:31,558 TOUT EST BON !
+2024-03-06 10:50:31,558 TOUT EST BON !
+2024-03-06 10:50:31,565 Affichage de tous les users
+2024-03-06 10:50:31,565 Affichage de tous les users
+2024-03-06 10:51:11,288 Starting IntroJavaSpringApplication using Java 21.0.2 with PID 13428 (C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING\target\classes started by baptiste.martin in C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING)
+2024-03-06 10:51:11,288 Starting IntroJavaSpringApplication using Java 21.0.2 with PID 13428 (C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING\target\classes started by baptiste.martin in C:\Users\baptiste.martin\Desktop\Java\INTRODUCTION_JAVA_SPRING)
+2024-03-06 10:51:11,289 Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-03-06 10:51:11,289 Running with Spring Boot v3.2.2, Spring v6.1.3
+2024-03-06 10:51:11,290 The following 1 profile is active: "mysql"
+2024-03-06 10:51:11,290 The following 1 profile is active: "mysql"
+2024-03-06 10:51:14,630 Filter 'jwtTokenAuthenticationFilter' configured for use
+2024-03-06 10:51:14,630 Filter 'jwtTokenAuthenticationFilter' configured for use
+2024-03-06 10:51:15,229 Started IntroJavaSpringApplication in 4.322 seconds (process running for 5.101)
+2024-03-06 10:51:15,229 Started IntroJavaSpringApplication in 4.322 seconds (process running for 5.101)
+2024-03-06 10:51:18,279 TOUT EST BON !
+2024-03-06 10:51:18,279 TOUT EST BON !
+2024-03-06 10:51:18,300 Affichage de tous les users
+2024-03-06 10:51:18,300 Affichage de tous les users
+2024-03-06 10:51:54,299 No Authorization header found
+2024-03-06 10:51:54,299 No Authorization header found
+2024-03-06 10:51:54,334 Tentative de connexion
+2024-03-06 10:51:54,334 Tentative de connexion
+2024-03-06 10:51:54,538 Connexion réussie
+2024-03-06 10:51:54,538 Connexion réussie
+2024-03-06 10:52:04,551 TOUT EST BON !
+2024-03-06 10:52:04,551 TOUT EST BON !
+2024-03-06 10:52:04,557 Affichage de tous les users
+2024-03-06 10:52:04,557 Affichage de tous les users
+2024-03-06 10:52:14,831 No Authorization header found
+2024-03-06 10:52:14,831 No Authorization header found
+2024-03-06 10:52:14,832 Tentative de connexion
+2024-03-06 10:52:14,832 Tentative de connexion
+2024-03-06 10:52:14,919 org.springframework.security.authentication.BadCredentialsException: Les identifications sont erronées
+2024-03-06 10:52:14,919 org.springframework.security.authentication.BadCredentialsException: Les identifications sont erronées
+2024-03-06 10:52:23,981 No Authorization header found
+2024-03-06 10:52:23,981 No Authorization header found
+2024-03-06 10:52:23,982 Tentative de connexion
+2024-03-06 10:52:23,982 Tentative de connexion
+2024-03-06 10:52:24,070 Connexion réussie
+2024-03-06 10:52:24,070 Connexion réussie
+2024-03-06 10:52:35,761 TOUT EST BON !
+2024-03-06 10:52:35,761 TOUT EST BON !
+2024-03-06 10:52:35,768 Affichage de tous les users
+2024-03-06 10:52:35,768 Affichage de tous les users

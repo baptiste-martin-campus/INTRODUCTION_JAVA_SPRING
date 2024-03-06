@@ -1,4 +1,4 @@
-package fr.le_campus_numerique.intro_java_spring.services;
+package fr.le_campus_numerique.intro_java_spring.configurations;
 
 import java.sql.Connection;
 import java.sql.DriverManager;

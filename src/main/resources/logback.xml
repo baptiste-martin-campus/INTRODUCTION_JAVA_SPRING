@@ -35,4 +35,9 @@
         <appender-ref ref="FILE" />
     </logger>
 
+    <root name="fr" level="error">
+        <appender-ref ref="CONSOLE" />
+        <appender-ref ref="FILE" />
+    </root>
+
 </configuration>
