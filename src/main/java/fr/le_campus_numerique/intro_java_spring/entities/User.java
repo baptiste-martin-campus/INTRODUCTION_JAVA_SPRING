@@ -7,7 +7,6 @@ import org.springframework.security.core.userdetails.UserDetails;
 
 import java.sql.Date;
 import java.util.Collection;
-import java.util.List;
 
 @Entity
 @Table(name = "users")
@@ -48,10 +47,8 @@ public class User implements UserDetails {
     @JoinTable(name = "countries")
     private int country_id;
 
-    @Column(name = "roles", nullable = false)
-    @ElementCollection
-    private List<String> roles;
-
+    @Column(name="roles")
+    private String roles;
     public int getId() {
         return this.id;
     }
@@ -84,21 +81,28 @@ public class User implements UserDetails {
         this.pseudo = pseudo;
     }
 
-    public List<String> getRoles() {
+    public String getRoles() {
         return this.roles;
     }
 
-    public void setRoles(String role) {
-        boolean ok = true;
-        for (String roleItem : this.getRoles()) {
-            if (roleItem.equals(role)) {
-                ok = false;
-                break;
-            }
-        }
-        if (ok) {
-            this.roles.add(role);
-        }
+//    public void addRole(String role) {
+//        if (this.roles == null){
+//            this.roles = new ArrayList<>();
+//        }
+//        boolean ok = true;
+//        for (String roleItem : this.getRoles()) {
+//            if (roleItem.equals(role)) {
+//                ok = false;
+//                break;
+//            }
+//        }
+//        if (ok) {
+//            this.roles.add(role);
+//        }
+//    }
+
+    public void setRoles(String roles){
+        this.roles = roles;
     }
 
     public String getPhone() {

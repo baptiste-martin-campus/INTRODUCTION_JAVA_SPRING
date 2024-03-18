@@ -38,11 +38,9 @@ public class JwtTokenAuthenticationFilter extends OncePerRequestFilter {
         String authorizationHeader = request.getHeader("Authorization");
 
         if (authorizationHeader == null) {
-            System.err.println("No Authorization header found");
-            LOGGER.error("No Authorization header found");
+            LOGGER.debug("No Authorization header found");
         } else if (!authorizationHeader.startsWith("Bearer ")) {
-            System.err.println("No Bearer found");
-            LOGGER.error("No Bearer found");
+            LOGGER.debug("No Bearer found");
         } else {
             String token = authorizationHeader.replace("Bearer ", "");
             if (jwtUtil.isValid(token)) {

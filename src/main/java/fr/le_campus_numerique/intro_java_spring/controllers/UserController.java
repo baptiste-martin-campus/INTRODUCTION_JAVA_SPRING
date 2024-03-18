@@ -54,6 +54,7 @@ public class UserController{
         return dao.findByPseudo(name).toDto();
     }
 
+
     @PostMapping("/users")
     public UserDTO addUser(@RequestBody User user) throws Exception{
         LOGGER.info("Ajout d'un user");

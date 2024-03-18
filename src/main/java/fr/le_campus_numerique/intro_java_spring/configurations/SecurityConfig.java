@@ -54,7 +54,7 @@ public class SecurityConfig {
                 .authorizeHttpRequests(authorize -> authorize
                         .dispatcherTypeMatchers(FORWARD, ERROR).permitAll()
                         .requestMatchers("/api/public/**").permitAll()
-                        .requestMatchers(HttpMethod.POST ,"users").permitAll()
+                        .requestMatchers(HttpMethod.POST ,"/users").permitAll()
                         .requestMatchers("/api/private/**").hasRole(Roles.ROLE_USER)
                         .anyRequest().authenticated()
                 )
