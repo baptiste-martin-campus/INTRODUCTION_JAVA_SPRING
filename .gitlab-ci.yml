@@ -1,0 +1,17 @@
+stages:
+  - build
+  - deploy
+
+build:
+  stage: build
+  script:
+    - echo $SSH_PRIVATE_KEY > /root/.ssh/id_ed25519
+    - ssh user@212.47.228.151
+
+deploy:
+  stage: deploy
+  image: docker:stable
+  script:
+    - echo "Build in progress !"
+    - docker build -t squaregames .
+    - docker push
