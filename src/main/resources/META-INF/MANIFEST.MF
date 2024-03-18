@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Main-Class: fr.le_campus_numerique.intro_java_spring.IntroJavaSpringAppl
+ ication
+
